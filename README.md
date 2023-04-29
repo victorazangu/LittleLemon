@@ -115,12 +115,11 @@ http://127.0.0.1:8000/auth/users/
 <br> <br>
 
 ```
-<br>
 
 
-# Testing
-There are a total of 29 tests to ensure that each API endpoint and each of its allowed HTTP methods work properly.
-<br>
+
+# There are a total of 29 tests to ensure that each API endpoint and each of its allowed HTTP methods work properly.
+
 
 
 It should output something similar to this
