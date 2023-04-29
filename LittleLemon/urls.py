@@ -19,7 +19,7 @@ from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 from restaurant import views
 router = DefaultRouter()
-router.register(r'tables', views.BookingViewSet)
+router.register(r'tables', views.BookingViewSet,basename='tables')
 
 
 urlpatterns = [
@@ -27,6 +27,6 @@ urlpatterns = [
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.authtoken')),
     path('restaurant/menu/', include('restaurant.urls')),
-    path('restaurant/booking/', include(router.urls), name='booking'),
+    path('restaurant/booking/', include(router.urls)),
 
 ]
