@@ -62,7 +62,7 @@ http:127.0.0.1:8000/restaurant/menu/items
 | Method | Action | TOKEN AUTH | STATUS CODE |
 | --- | --- | --- | --- |
 | GET | Retrieves all menu items | No | 200 |
-| POST | Creates a menu item | No | 201 |
+| POST | Creates a menu item | Yes | 201 |
 <br>
 
 http:127.0.0.1:8000/restaurant/menu/items/{menu-itemId}
@@ -70,8 +70,8 @@ http:127.0.0.1:8000/restaurant/menu/items/{menu-itemId}
 | --- | --- | --- | --- |
 | GET | Retrieves the menu item details | NO | 200 |
 | PUT | Update the menu item | Yes | 200 |
-| PATCH | Partially update the menu item | No | 200 |
-| DELETE | Delete the menu item | No | 200 |
+| PATCH | Partially update the menu item | Yes | 200 |
+| DELETE | Delete the menu item | Yes | 200 |
 <br>
 
 http:127.0.0.1:8000/restaurant/booking/tables/
@@ -122,11 +122,6 @@ http://127.0.0.1:8000/auth/users/
 There are a total of 29 tests to ensure that each API endpoint and each of its allowed HTTP methods work properly.
 <br>
 
-Run the tests
-```jsx
-python manage.py test
-```
-<br>
 
 It should output something similar to this
 ```jsx
